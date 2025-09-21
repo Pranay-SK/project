@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "@clerk/nextjs": "^6.32.0",
+    "@neondatabase/serverless": "^1.0.1",
+    "@prisma/adapter-neon": "^6.16.2",
+    "@prisma/client": "^6.16.2",
+    "inngest": "^3.41.0",
+    "ws": "^8.18.3"
+  },
+  "devDependencies": {
+    "@types/ws": "^8.18.1",
+    "prisma": "^6.16.2"
+  }
+}
