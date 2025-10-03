@@ -1,14 +1,49 @@
 {
+  "name": "gocart",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "prisma generate && next build",
+    "start": "next start",
+    "lint": "next lint",
+    "postinstall": "prisma generate"
+  },
   "dependencies": {
     "@clerk/nextjs": "^6.32.0",
-    "@neondatabase/serverless": "^1.0.1",
-    "@prisma/adapter-neon": "^6.16.2",
+    "@neondatabase/serverless": "^1.0.2",
+    "@prisma/adapter-neon": "^6.16.3",
     "@prisma/client": "^6.16.2",
-    "inngest": "^3.41.0",
+    "@reduxjs/toolkit": "^2.8.2",
+    "date-fns": "^4.1.0",
+    "dotenv-cli": "^10.0.0",
+    "inngest": "^3.44.0",
+    "lucide-react": "^0.525.0",
+    "next": "^15.5.4",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-hot-toast": "^2.5.2",
+    "react-redux": "^9.2.0",
+    "recharts": "^3.1.2",
     "ws": "^8.18.3"
   },
   "devDependencies": {
+    "@clerk/types": "^4.86.0",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^24.5.2",
+    "@types/react": "^19.1.13",
     "@types/ws": "^8.18.1",
-    "prisma": "^6.16.2"
-  }
+    "bufferutil": "^4.0.9",
+    "prisma": "^6.16.3",
+    "tailwindcss": "^4",
+    "typescript": "^5.9.2"
+  },
+  "description": "<div align=\"center\">   <h1><img src=\"https://gocartshop.in/favicon.ico\" width=\"20\" height=\"20\" alt=\"GoCart Favicon\">    GoCart</h1>   <p>     An open-source multi-vendor e-commerce platform built with Next.js and Tailwind CSS.   </p>   <p>     <a href=\"https://github.com/GreatStackDev/goCart/blob/main/LICENSE.md\"><img src=\"https://img.shields.io/github/license/GreatStackDev/goCart?style=for-the-badge\" alt=\"License\"></a>     <a href=\"https://github.com/GreatStackDev/goCart/pulls\"><img src=\"https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=for-the-badge\" alt=\"PRs Welcome\"></a>     <a href=\"https://github.com/GreatStackDev/goCart/issues\"><img src=\"https://img.shields.io/github/issues/GreatStackDev/goCart?style=for-the-badge\" alt=\"GitHub issues\"></a>   </p> </div>",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
