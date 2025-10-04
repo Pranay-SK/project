@@ -1,14 +1,17 @@
-import { serve } from "inngest/next";
-import { inngest } from "@/inngest/client"; // Use one consistent path for the client
+// In app/api/inngest/route.js
 
-// Import all the functions you intend to use
+import { serve } from "inngest/next";
+import { inngest } from "@/inngest/client";
 import { 
   syncUserCreation, 
   syncUserUpdation, 
   syncUserDeletion 
 } from "@/inngest/functions";
 
-// Create an API that serves all your functions
+// --- ADD THIS LINE FOR DEBUGGING ---
+console.log("Signing key from Vercel env:", process.env.INNGEST_SIGNING_KEY);
+// ------------------------------------
+
 export const { GET, POST, PUT } = serve({
   client: inngest,
   functions: [
