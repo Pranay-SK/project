@@ -9,7 +9,7 @@ import {
 } from "@/inngest/functions";
 
 // --- ADD THIS LINE FOR DEBUGGING ---
-console.log("Signing key from Vercel env:", process.env.INNGEST_SIGNING_KEY);
+//console.log("Signing key from Vercel env:", process.env.INNGEST_SIGNING_KEY);
 // ------------------------------------
 
 export const { GET, POST, PUT } = serve({
